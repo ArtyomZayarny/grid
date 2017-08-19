@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+	.container__title {
+		font-family: 'Arial', sans-serif;
+		padding-left: 10px;
+	}
+	.ba-grid {
+		display: table;
+		.ba-grid__col {
+			float: left;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			&--col-5 {
+				width: 50%;
+			}
+			&--col-3 {
+				width: 33.3%;
+			}
+			&--col-1 {
+				width: 16.667%;
+			}
+			.ba-grid__img {
+				max-width: 100%;
+				display: block;
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+}
